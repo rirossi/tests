@@ -1,6 +1,6 @@
 package arrays;
 
-public class Subarray {
+public class SubarraySum {
 
     public static void main(String[] args) {
         System.out.println("Subarray Test");
