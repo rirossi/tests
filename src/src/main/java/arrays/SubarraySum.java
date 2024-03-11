@@ -2,6 +2,12 @@ package arrays;
 
 public class SubarraySum {
 
+    /**
+     * Identify the sub array which sum is the highest.
+     *
+     * Go through array and keep count of the sum so far. If value goes under 0 reset buffer.
+     * @param args
+     */
     public static void main(String[] args) {
         System.out.println("Subarray Test");
 

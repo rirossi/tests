@@ -1,5 +1,8 @@
 package excercise.rubik;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+
 public class RubikCube {
 
     private Face main, left, right, top, bottom, back;
@@ -13,7 +16,8 @@ public class RubikCube {
         back = new Face(6);
     }
 
-    public void turnRowToRight(int row) throws Exception{
+    public void turnRowToRight(int row) {
+
         int[] mainTopRow = main.getRow(row);
         main.setRow(row, left.getRow(row));
         left.setRow(row, back.getRow(row));
@@ -24,6 +28,10 @@ public class RubikCube {
         } else if(row == 3) {
             bottom.turnClockWise();
         }
+    }
+
+    public void print() {
+
     }
 
 
